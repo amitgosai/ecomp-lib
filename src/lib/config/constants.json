@@ -1,0 +1,20 @@
+{
+    "responseCodes": {
+        "SUCCESS": "SUCCESS", 
+        "VALIDATION_MESSAGE": "VALIDATION_MESSAGE",   
+        "INVALID_REQUEST": "INVALID_REQUEST", 
+        "INVALID_PARAM": "INVALID_PARAM", 
+        "PARAM_MISSING": "PARAM_MISSING", 
+        "USER_NOT_FOUND": "USER_NOT_FOUND",
+        "PAGE_NOT_FOUND": "PAGE_NOT_FOUND", 
+        "NO_DATA": "NO_DATA", 
+        "DATA_DELETED": "DATA_DELETED", 
+        "DATA_FETCH_ERROR": "DATA_FETCH_ERROR", 
+        "DATA_WRITE_ERROR": "DATA_WRITE_ERROR", 
+        "UNHANDLED_ERROR": "UNHANDLED_ERROR", 
+        "NOT_AUTHORIZED": "NOT_AUTHORIZED"
+    }, 
+    "debug": {
+        "showErrors": true
+    }
+}
