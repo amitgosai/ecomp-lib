@@ -11,6 +11,14 @@
       "notes": "notes", 
       "rowOrder": "rowOrder"
     }, 
+    "userRegistrations": {
+      "collection": "userRegistrations",
+      "doc": {
+        "userName": "userName", 
+        "userCreated": "userCreated",
+        "creationDateTime": "creationDateTime"
+      }
+    },
     "persons": {
       "collection": "persons", 
       "doc": {
@@ -88,7 +96,8 @@
         }, 
         "companyId": "companyId", 
         "appId": "appId", 
-        "groupName": "groupName"
+        "groupName": "groupName",
+        "groupNameLower": "groupNameLower"
       }
     }, 
     "appResources": {

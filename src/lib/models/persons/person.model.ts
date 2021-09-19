@@ -4,8 +4,25 @@ import { IPhone } from "../contacts/phone.model";
 import { ISocialMediaID } from "../contacts/social-media-id.model";
 import { IDbFields } from "../data/dbfields.model";
 
-export const Gender = [{id: "M", value: "Male"}, {id: "F", value: "Female"}, {id: "O", value: "Other"}];
+export const Gender = {
+    Male: "M", 
+    Female: "F", 
+    Other: "O"
+}
 export type tGender = "M" | "F" | "O";
+export type ContactType = "Person" | "Company"; 
+
+export const perCompAssocType = {
+    Owner: "Owner", 
+    Customer: "Customer", 
+    Employee: "Employee", 
+    ServiceProvider: "Service Provider", 
+    Vendor: "Vendor", 
+    Supplier: "Supplier", 
+    Contractor: "Contractor", 
+    Other: "Other"
+}
+export type tPerCompAssocType = "Owner" | "Customer" | "Employee" | "Service Provider" | "Vendor" | "Supplier" | "Contractor" | "Other"; 
 
 export interface IPerson extends IDbFields {
     firstName: string; 

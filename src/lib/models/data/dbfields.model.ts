@@ -1,5 +1,17 @@
-export interface IDbFields {
-    id: string; 
+export const Databases = {
+    Firestore: "Firestore", 
+    MySQL: "MySQL", 
+    MSSQL: "Microsoft SQL Server", 
+    Oracle: "Oracle", 
+    MongoDb: "MongoDb"
+}; 
+
+export interface IDb {
+    dbName?: string | null | undefined;
+}
+
+export interface IDbFields extends IDb {
+    id?: string | null | undefined; 
     createdOn?: Date | null | undefined; 
     createdBy?: string | null | undefined;  
     updatedOn?: Date | null | undefined; 

@@ -1,6 +1,7 @@
 import { IDbFields } from "../data/dbfields.model";
 import { IUserGroup } from "./user-group.model";
-import { IPerson } from "../persons/person.model";
+import { IPerson, tPerCompAssocType } from "../persons/person.model";
+import { IDevice } from "../system/device.model";
 
 export interface User extends IDbFields {
     userName: string; 
@@ -32,4 +33,32 @@ export interface User extends IDbFields {
     } | null | undefined; 
     appAccess?: string[] | null | undefined; 
     userGroups?: IUserGroup[] | null | undefined; 
+}
+
+
+export interface ICreateUserParams {
+    uid?: string | undefined | null; 
+    userName: string;
+    fullName: string; 
+    companyId: string | null | undefined;
+    companyName: string;
+    associateAs: tPerCompAssocType | string;
+    appId: string;
+    email: string | null | undefined; 
+    emailVerified: boolean | null | undefined; 
+    countryCode: string | null | undefined;
+    phone: string | null | undefined;
+    phoneVerified: boolean | null | undefined;
+    device: IDevice | null | undefined;
+}
+
+export interface IUserExistsParams {
+    email: string | null | undefined; 
+    countryCode?: string | null | undefined; 
+    phoneNumber: string | null | undefined;
+}
+
+export interface IVerifyOtpParams {
+    otp: string;
+    receiverId: string;
 }

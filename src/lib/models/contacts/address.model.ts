@@ -3,6 +3,7 @@ import { IDbFields } from "../data/dbfields.model";
 export interface IAddress extends IDbFields {
     companyId?: string | null | undefined; 
     personId?: string | null | undefined; 
+    addressName?: string | null | undefined;
     addressLine1: string;  
     addressLine2?: string | null | undefined; 
     areaName?: string | null | undefined; 
