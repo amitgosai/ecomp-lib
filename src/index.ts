@@ -4,6 +4,7 @@ export * from "./lib/data/firestore";
 export * from "./lib/models/business/company-type.model";
 export * from "./lib/models/business/company.model"; 
 export * from "./lib/models/business/tax-id.model"; 
+export * from "./lib/models/business/job-title.model";
 
 export * from "./lib/models/common/fn-response.model"; 
 export * from "./lib/models/common/dropdown.model";
@@ -13,8 +14,11 @@ export * from "./lib/models/comms/http-headers.model";
 export * from "./lib/models/comms/http-params.model";
 
 export * from "./lib/models/contacts/address.model";
+export * from "./lib/models/contacts/contact-groups.model";
+export * from "./lib/models/contacts/document.model";
 export * from "./lib/models/contacts/email.model";
 export * from "./lib/models/contacts/phone.model";
+export * from "./lib/models/contacts/person-company.model";
 export * from "./lib/models/contacts/social-media-id.model";
 
 export * from "./lib/models/data/dbfields.model";

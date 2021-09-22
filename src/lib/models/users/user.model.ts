@@ -1,7 +1,8 @@
 import { IDbFields } from "../data/dbfields.model";
 import { IUserGroup } from "./user-group.model";
-import { IPerson, tPerCompAssocType } from "../persons/person.model";
+import { IPerson } from "../persons/person.model";
 import { IDevice } from "../system/device.model";
+import { tPerCompAssocType } from "../contacts/person-company.model";
 
 export interface User extends IDbFields {
     userName: string; 

@@ -19,9 +19,18 @@
         "creationDateTime": "creationDateTime"
       }
     },
+    "lkpContactGroups": {
+      "collection": "lkpContactGroups",
+      "doc": {
+        "companyId": "companyId",
+        "contactGroupName": "contactGroupName", 
+        "contactGroupColor": "contactGroupColor"
+      }
+    },
     "persons": {
       "collection": "persons", 
       "doc": {
+        "photoURL": "photoURL",
         "firstName": "firstName", 
         "lastName": "lastName", 
         "fullName": "fullName", 
@@ -31,6 +40,23 @@
         "contactGroup": "contactGroup"
       }
     }, 
+    "lkpDocumentTypes": {
+      "collection": "lkpDocumentTypes", 
+      "doc": {
+        "documentType": "documentType"
+      }
+    },
+    "contactDocs": {
+      "collection": "contactDocs",
+      "doc": {
+        "personId": "personId",
+        "companyId": "companyId",
+        "documentName": "documentName",
+        "documentType": "documentType",
+        "documentURL": "documentURL",
+        "storagePath": "storagePath"
+      }
+    },
     "lkpCompanyTypes": {
       "collection": "lkpCompanyTypes", 
       "doc": {
@@ -53,6 +79,9 @@
         "publicId": "publicId", 
         "companyName": "companyName", 
         "companyNameLower": "companyNameLower",
+        "parentCompanyId": "parentCompanyId", 
+        "parentCompanyName": "parentCompanyName", 
+        "parentCompanyNameLower": "parentCompanyNameLower",
         "companyType": "companyType", 
         "registrationNumber": "registrationNumber",
         "dateOfIncorporation": "dateOfIncorporation", 
@@ -151,8 +180,16 @@
       "collection": "personCompanies", 
       "doc": {
         "personId": "personId", 
+        "personFullName": "personFullName",
+        "personFullNameLower": "personFullNameLower",
         "companyId": "companyId", 
+        "companyName": "companyName",
+        "companyNameLower": "companyNameLower",
+        "parentCompanyId": "parentCompanyId",
+        "parentCompanyName": "parentCompanyName",
+        "parentCompanyNameLower": "parentCompanyNameLower",
         "jobTitleId": "jobTitleId", 
+        "jobTitle": "jobTitle",
         "isShareholder": "isShareholder", 
         "sharePercent": "sharePercent", 
         "associationType": "associationType", 
@@ -394,7 +431,7 @@
       }
     }, 
     "screens": {
-      "collection": "screen", 
+      "collection": "screens", 
       "doc": {
         "id": {
           "eCompLogin": "eCompLogin", 

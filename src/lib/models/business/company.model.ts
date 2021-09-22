@@ -11,6 +11,9 @@ export interface ICompany extends IDbFields {
     companyLogo?: string | null | undefined; 
     companyName: string; 
     companyNameLower?: string | null | undefined; 
+    parentCompanyId?: string | null | undefined;
+    parentCompanyName?: string | null | undefined;
+    parentCompanyNameLower?: string | null | undefined;
     companyType?: tCompanyTypes | null | undefined; 
     registrationNumber?: string | null | undefined; 
     dateOfIncorporation?: Date | null | undefined; 

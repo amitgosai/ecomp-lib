@@ -221,10 +221,16 @@ export class Util {
         let retVal: any | null | undefined; 
         try {
             retVal = null; 
-            for(const item of arrayList) {
+            /*
+            arrayList.forEach((item) => {
                 if(item[propName] === searchValue) {
-                    retVal = item; 
-                    break; 
+                    retVal = item;
+                }
+            });*/
+            for (let item of arrayList) {
+                if(item[propName] === searchValue) {
+                    retVal = item;
+                    break;
                 }
             }
             return retVal; 
@@ -252,6 +258,36 @@ export class Util {
         } catch (err) {
             retVal = null;
             throw new Error("Error deleting object from array"); 
+        }
+    }
+
+    public static removeArrayElement(arrayList: any[], deleteElement: any): any[] | null | undefined {
+        const index = arrayList.indexOf(deleteElement, 0);
+        const newArr = arrayList.slice();
+
+        try {
+            if (index > -1) {
+                newArr.splice(index, 1);
+            }
+    
+            return newArr;
+        } catch (err)  {
+            throw new Error("Error deleting value from array");
+        }
+    }
+
+    public static removeSpaces(stringVal: string, makeLowerCase: boolean = false): string | null {
+        let retVal: string = "";
+        try {
+            if (makeLowerCase) {
+                retVal = stringVal.replace(/\s+/g, '').trim().toLowerCase();
+            } else {
+                stringVal.replace(/\s+/g, '').trim();
+            }
+            return retVal;
+        } catch (err) {
+            retVal = "";
+            return null;
         }
     }
 
