@@ -19,7 +19,6 @@ export interface ICompany extends IDbFields {
     dateOfIncorporation?: Date | null | undefined; 
     taxIDs?: ITaxID[] | null | undefined; 
     websites?: string[] | null | undefined; 
-    contactGroup: string[] | null | undefined; 
     phones: IPhone[] | null | undefined; 
     emails: IEmail[] | null | undefined; 
     addresses: IAddress[] | null | undefined; 

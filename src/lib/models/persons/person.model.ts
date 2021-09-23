@@ -19,7 +19,6 @@ export interface IPerson extends IDbFields {
     fullNameLower: string; 
     gender?: tGender | null | undefined; 
     dateOfBirth?: Date | null | undefined; 
-    contactGroup?: string[] | null | undefined; 
     websites: string[] | null | undefined; 
     phones: IPhone[] | null | undefined; 
     emails: IEmail[] | null | undefined; 

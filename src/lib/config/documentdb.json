@@ -36,8 +36,23 @@
         "fullName": "fullName", 
         "fullNameLower": "fullNameLower", 
         "gender": "gender", 
-        "dateOfBirth": "dateOfBirth", 
-        "contactGroup": "contactGroup"
+        "dateOfBirth": "dateOfBirth"
+      }
+    }, 
+    "companies": {
+      "collection": "companies", 
+      "doc": {
+        "publicId": "publicId", 
+        "companyName": "companyName", 
+        "companyNameLower": "companyNameLower",
+        "parentCompanyId": "parentCompanyId", 
+        "parentCompanyName": "parentCompanyName", 
+        "parentCompanyNameLower": "parentCompanyNameLower",
+        "companyType": "companyType", 
+        "registrationNumber": "registrationNumber",
+        "dateOfIncorporation": "dateOfIncorporation", 
+        "taxIDs": "taxIDs", 
+        "websites": "websites"
       }
     }, 
     "lkpDocumentTypes": {
@@ -71,23 +86,6 @@
           "Other": "Other"
         }, 
         "companyType": "companyType"
-      }
-    }, 
-    "companies": {
-      "collection": "companies", 
-      "doc": {
-        "publicId": "publicId", 
-        "companyName": "companyName", 
-        "companyNameLower": "companyNameLower",
-        "parentCompanyId": "parentCompanyId", 
-        "parentCompanyName": "parentCompanyName", 
-        "parentCompanyNameLower": "parentCompanyNameLower",
-        "companyType": "companyType", 
-        "registrationNumber": "registrationNumber",
-        "dateOfIncorporation": "dateOfIncorporation", 
-        "taxIDs": "taxIDs", 
-        "websites": "websites", 
-        "contactGroup": "contactGroup"
       }
     }, 
     "lkpPhoneTypes": {
@@ -176,8 +174,8 @@
         "associationType": "associationType"
       }
     }, 
-    "personCompanies": {
-      "collection": "personCompanies", 
+    "contacts": {
+      "collection": "contacts", 
       "doc": {
         "personId": "personId", 
         "personFullName": "personFullName",
@@ -193,7 +191,8 @@
         "isShareholder": "isShareholder", 
         "sharePercent": "sharePercent", 
         "associationType": "associationType", 
-        "isThirdPartyAssociate": "isThirdPartyAssociate"
+        "isThirdPartyAssociate": "isThirdPartyAssociate",
+        "contactGroup": "contactGroup"
       }
     }, 
     "countries": {

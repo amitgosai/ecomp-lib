@@ -18,7 +18,7 @@ export * from "./lib/models/contacts/contact-groups.model";
 export * from "./lib/models/contacts/document.model";
 export * from "./lib/models/contacts/email.model";
 export * from "./lib/models/contacts/phone.model";
-export * from "./lib/models/contacts/person-company.model";
+export * from "./lib/models/contacts/contact.model";
 export * from "./lib/models/contacts/social-media-id.model";
 
 export * from "./lib/models/data/dbfields.model";

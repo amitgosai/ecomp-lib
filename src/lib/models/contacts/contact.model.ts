@@ -14,7 +14,7 @@ export const perCompAssocType = {
 }
 export type tPerCompAssocType = "Owner" | "Customer" | "Employee" | "Service Provider" | "Vendor" | "Supplier" | "Contractor" | "Other"; 
 
-export interface IPersonCompany extends IDbFields {
+export interface IContact extends IDbFields {
     companyId: string;
     companyName: string;
     companyNameLower: string;
@@ -29,4 +29,5 @@ export interface IPersonCompany extends IDbFields {
     isShareholder?: boolean | undefined;
     isThirdPartyAssociate?: boolean | undefined;
     sharePercent?: number | undefined;
+    contactGroup?: string[] | null | undefined; 
 }
