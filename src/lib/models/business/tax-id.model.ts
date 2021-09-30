@@ -13,3 +13,9 @@ export interface ITaxID extends IDbFields {
     taxIdType: tTaxIdType;
     taxId: string; 
 }
+
+export interface ILkpCountryTaxTypes extends IDbFields {
+    countryId: string;
+    taxType: string;
+    isIdType: boolean;
+}

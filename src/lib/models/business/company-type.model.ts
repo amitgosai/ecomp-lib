@@ -11,3 +11,8 @@ export const companyTypes = {
     Other: "Other"
 }; 
 export type tCompanyTypes = "Private Limited" | "Public Limited" | "Partnerships" | "Limited Liability Partnership" | "One Person" | "Sole Proprietorship" | "Section 8 Company" | "Other"; 
+
+export interface ICompanyTypes extends IDbFields {
+    companyType: string;
+    rowOrder: number;
+}

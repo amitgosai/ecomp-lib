@@ -3,8 +3,10 @@ export * from "./lib/data/firestore";
 
 export * from "./lib/models/business/company-type.model";
 export * from "./lib/models/business/company.model"; 
+export * from "./lib/models/business/dept.model";
 export * from "./lib/models/business/tax-id.model"; 
 export * from "./lib/models/business/job-title.model";
+export * from "./lib/models/business/trade-currency.model";
 
 export * from "./lib/models/common/fn-response.model"; 
 export * from "./lib/models/common/dropdown.model";
@@ -22,6 +24,8 @@ export * from "./lib/models/contacts/contact.model";
 export * from "./lib/models/contacts/social-media-id.model";
 
 export * from "./lib/models/data/dbfields.model";
+
+export * from "./lib/models/hrm/job-bands.model";
 
 export * from "./lib/models/persons/id-type.model";
 export * from "./lib/models/persons/person.model";

@@ -1,4 +1,5 @@
 {
+    "functionLocation": "us-central1",
     "ErrorTypes:": {
         "Error": "Error", 
         "Warning": "Warning", 
@@ -23,6 +24,7 @@
         "USER_NOT_FOUND": "USER_NOT_FOUND",
         "PAGE_NOT_FOUND": "PAGE_NOT_FOUND", 
         "NO_DATA": "NO_DATA", 
+        "DUPLICATE_DATA": "DUPLICATE_DATA",
         "DATA_DELETED": "DATA_DELETED", 
         "DATA_FETCH_ERROR": "DATA_FETCH_ERROR", 
         "DATA_WRITE_ERROR": "DATA_WRITE_ERROR", 

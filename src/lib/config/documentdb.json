@@ -85,7 +85,8 @@
           "SecEight": "SecEight", 
           "Other": "Other"
         }, 
-        "companyType": "companyType"
+        "companyType": "companyType",
+        "rowOrder": "rowOrder"
       }
     }, 
     "lkpPhoneTypes": {
@@ -207,6 +208,14 @@
         "flagIconCss": "flagIconCss"
       }
     }, 
+    "lkpCountryTaxTypes": {
+      "collection": "lkpCountryTaxTypes",
+      "doc": {
+        "countryId": "countryId",
+        "taxType": "taxType",
+        "isIdType": "isIdType"
+      }
+    },
     "srvcblCountries": {
       "collection": "srvcblCountries", 
       "doc": {
@@ -489,5 +498,43 @@
         "view": "view", 
         "enabled": "enabled"
       }
+    }, 
+    "departments": {
+        "collection": "departments", 
+        "doc": {
+            "companyId": "companyId", 
+            "deptName": "deptName",
+            "deptNameLower": "deptNameLower"
+        }
+    },
+    "lkpCurrencies": {
+        "collection": "lkpCurrencies",
+        "doc": {
+            "currencyCode": "currencyCode",
+            "currencySymbol": "currencySymbol",
+            "currencyName": "currencyName",
+            "countryCode": "countryCode",
+            "isDigital": "isDigital"
+        }
+    },
+    "tradeCurrencies": {
+        "collection": "tradeCurrencies",
+        "doc": {
+            "companyId": "companyId",
+            "currencyCode": "currencyCode",
+            "currencySymbol": "currencySymbol",
+            "isDefault": "isDefault",
+            "isDigital": "isDigital"
+        }
+    },
+    "jobBands": {
+        "collection": "jobBands", 
+        "doc": {
+            "companyId": "companyId",
+            "jobBand": "jobBand",
+            "salCurrencyCode": "salCurrencyCode",
+            "minSalary": "minSalary",
+            "maxSalary": "maxSalary"
+        }
     }
 }

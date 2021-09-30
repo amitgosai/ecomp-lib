@@ -2,7 +2,7 @@ import { IDbFields } from "../data/dbfields.model";
 import { IUserGroup } from "./user-group.model";
 import { IPerson } from "../persons/person.model";
 import { IDevice } from "../system/device.model";
-import { tPerCompAssocType } from "../contacts/contact.model";
+import { tContactAssociationTypes } from "../contacts/contact.model";
 
 export interface User extends IDbFields {
     userName: string; 
@@ -43,7 +43,7 @@ export interface ICreateUserParams {
     fullName: string; 
     companyId: string | null | undefined;
     companyName: string;
-    associateAs: tPerCompAssocType | string;
+    associateAs: tContactAssociationTypes | string;
     appId: string;
     email: string | null | undefined; 
     emailVerified: boolean | null | undefined; 
