@@ -533,8 +533,26 @@
             "companyId": "companyId",
             "jobBand": "jobBand",
             "salCurrencyCode": "salCurrencyCode",
+            "salCurrencySymbol": "salCurrencySymbol",
             "minSalary": "minSalary",
             "maxSalary": "maxSalary"
+        }
+    }, 
+    "jobTitles": {
+        "collection": "jobTitles",
+        "doc": {
+            "companyId": "companyId",
+            "jobTitle": "jobTitle",
+            "jobBandId": "jobBandId",
+            "jobBand": "jobBand"
+        }
+    },
+    "companyAutoIDs": {
+        "collection": "companyAutoIDs",
+        "doc": {
+            "companyId": "companyId",
+            "nextCustomerId": "nextCustomerId",
+            "nextEmployeeId": "nextEmployeeId"
         }
     }
 }
