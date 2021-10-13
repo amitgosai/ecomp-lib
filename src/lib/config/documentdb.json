@@ -44,14 +44,20 @@
       "doc": {
         "publicId": "publicId", 
         "companyName": "companyName", 
+        "companyLogo": "companyLogo",
         "companyNameLower": "companyNameLower",
         "parentCompanyId": "parentCompanyId", 
         "parentCompanyName": "parentCompanyName", 
         "parentCompanyNameLower": "parentCompanyNameLower",
+        "companyTypeId": "companyTypeId",
         "companyType": "companyType", 
         "registrationNumber": "registrationNumber",
         "dateOfIncorporation": "dateOfIncorporation", 
         "taxIDs": "taxIDs", 
+        "phones": "phones",
+        "emails": "emails",
+        "addresses": "addresses",
+        "socialMediaIDs": "socialMediaIDs",
         "websites": "websites"
       }
     }, 
@@ -152,13 +158,6 @@
         "otp": "otp"
       }
     },
-    "jobTitles": {
-      "collection": "jobTitles", 
-      "doc": {
-        "companyId": "companyId", 
-        "jobTitle": "jobTitle"
-      }
-    }, 
     "lkpPerCompAssociationTypes": { 
       "collection": "lkpPerCompAssociationTypes", 
       "doc": {
