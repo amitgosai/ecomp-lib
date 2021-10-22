@@ -24,6 +24,8 @@ export * from "./lib/models/contacts/social-media-id.model";
 
 export * from "./lib/models/data/dbfields.model";
 
+export * from "./lib/models/finance/bank-account.model";
+
 export * from "./lib/models/hrm/job-bands.model";
 export * from "./lib/models/hrm/job-title.model";
 

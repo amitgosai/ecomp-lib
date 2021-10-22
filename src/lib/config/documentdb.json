@@ -36,7 +36,8 @@
         "fullName": "fullName", 
         "fullNameLower": "fullNameLower", 
         "gender": "gender", 
-        "dateOfBirth": "dateOfBirth"
+        "dateOfBirth": "dateOfBirth",
+        "bankAccounts": "bankAccounts"
       }
     }, 
     "companies": {
@@ -58,7 +59,8 @@
         "emails": "emails",
         "addresses": "addresses",
         "socialMediaIDs": "socialMediaIDs",
-        "websites": "websites"
+        "websites": "websites",
+        "bankAccounts": "bankAccounts"
       }
     }, 
     "lkpDocumentTypes": {
@@ -191,10 +193,35 @@
         "isShareholder": "isShareholder", 
         "sharePercent": "sharePercent", 
         "associationType": "associationType", 
+        "baseLocAddrId": "baseLocAddrId",
+        "reportingManagerId": "reportingManagerId",
+        "annualCTC": "annualCTC",
+        "annualCTCCurrentyCode": "annualCTCCurrentyCode",
         "isThirdPartyAssociate": "isThirdPartyAssociate",
         "contactGroup": "contactGroup"
       }
     }, 
+    "lkpBankAccountTypes": {
+      "collection": "lkpBankAccountTypes",
+      "doc": {
+        "id": {
+          "Savings": "Savings",
+          "Current": "Current"
+        },
+        "bankAccountType": "bankAccountType"
+      }
+    },
+    "bankAccounts": {
+      "collection": "bankAccounts",
+      "doc": {
+        "accountCountry": "accountCountry",
+        "bankName": "bankName",
+        "accountType": "accountType",
+        "accountNumber": "accountNumber",
+        "accountIFSC": "accountIFSC",
+        "accountSwift": "accountSwift"
+      }
+    },
     "countries": {
       "collection": "countries", 
       "doc": {

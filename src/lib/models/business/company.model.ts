@@ -3,6 +3,7 @@ import { IEmail } from "../contacts/email.model";
 import { IPhone } from "../contacts/phone.model";
 import { ISocialMediaID } from "../contacts/social-media-id.model";
 import { IDbFields } from "../data/dbfields.model";
+import { IBankAccount } from "../finance/bank-account.model";
 import { tCompanyTypes } from "./company-type.model";
 import { ITaxID } from "./tax-id.model";
 
@@ -24,4 +25,5 @@ export interface ICompany extends IDbFields {
     emails: IEmail[] | null | undefined; 
     addresses: IAddress[] | null | undefined; 
     socialMediaIDs: ISocialMediaID[] | null | undefined; 
+    bankAccounts: IBankAccount[] | null | undefined;
 }
